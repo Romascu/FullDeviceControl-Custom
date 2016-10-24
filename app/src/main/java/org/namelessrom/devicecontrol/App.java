@@ -37,8 +37,6 @@ import java.util.HashSet;
 
 import at.amartinz.execution.ShellManager;
 import at.amartinz.universaldebug.UniversalDebug;
-import at.amartinz.universaldebug.fabric.FabricConfig;
-import at.amartinz.universaldebug.fabric.trees.CrashlyticsComponent;
 import at.amartinz.universaldebug.trees.BaseTree;
 import at.amartinz.universaldebug.trees.LogComponent;
 import at.amartinz.universaldebug.trees.VibrationComponent;
@@ -102,12 +100,7 @@ public class App extends android.app.Application {
                 .withDebugTree(buildDebugTree())
                 .withProductionTree(buildProductionTree());
 
-        if (!enableDebug) {
-            final FabricConfig fabricConfig = new FabricConfig(universalDebug)
-                    .withAnswers()
-                    .withCrashlytics();
-            universalDebug.withExtension(fabricConfig);
-        }
+
 
         universalDebug.install();
         ShellManager.enableDebug(App.enableDebug);
@@ -244,8 +237,7 @@ public class App extends android.app.Application {
             baseTree.addComponent(writerComponent);
         }
 
-        final CrashlyticsComponent crashlyticsComponent = new CrashlyticsComponent(baseTree);
-        baseTree.addComponent(crashlyticsComponent);
+
 
         return baseTree;
     }

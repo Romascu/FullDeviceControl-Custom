@@ -30,8 +30,8 @@ import android.os.Looper;
 import android.support.annotation.StringRes;
 import android.text.TextUtils;
 
-import com.crashlytics.android.answers.Answers;
-import com.crashlytics.android.answers.CustomEvent;
+
+import com.google.android.gms.ads.mediation.customevent.CustomEvent;
 
 import org.namelessrom.devicecontrol.models.DeviceConfig;
 import org.namelessrom.devicecontrol.utils.AppHelper;
@@ -178,10 +178,7 @@ public class CheckRequirementsTask extends AsyncTask<Void, Void, Void> {
             deviceConfig.dcFirstStart = false;
             deviceConfig.save();
 
-            final boolean isXposedInstalled = AppHelper.isPackageInstalled(XPOSED_INSTALLER_PACAKGE);
-            final CustomEvent customEvent = new CustomEvent("first_start");
-            customEvent.putCustomAttribute("xposed_installed", isXposedInstalled ? "true" : "false");
-            Answers.getInstance().logCustom(customEvent);
+
         }
 
         // patch sepolicy

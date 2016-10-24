@@ -3,8 +3,7 @@ package org.namelessrom.devicecontrol.thirdparty;
 import android.app.Activity;
 import android.text.TextUtils;
 
-import com.crashlytics.android.answers.Answers;
-import com.crashlytics.android.answers.CustomEvent;
+
 import com.pollfish.constants.Position;
 import com.pollfish.interfaces.PollfishClosedListener;
 import com.pollfish.interfaces.PollfishOpenedListener;
@@ -56,36 +55,28 @@ public class PollFishImpl {
 
         @Override public void onPollfishSurveyNotAvailable() {
             Timber.d(NOT_AVAILABLE);
-            Answers.getInstance().logCustom(new CustomEvent(NOT_AVAILABLE));
         }
 
         @Override public void onPollfishSurveyReceived(boolean playfulSurveys, int surveyPrice) {
             Timber.d(RECEIVED);
-            final CustomEvent event = new CustomEvent(RECEIVED);
-            event.putCustomAttribute("playful", playfulSurveys ? "true" : "false");
-            Answers.getInstance().logCustom(event);
+
         }
 
         @Override public void onPollfishSurveyCompleted(boolean playfulSurveys, int surveyPrice) {
             Timber.d(COMPLETED);
-            final CustomEvent event = new CustomEvent(COMPLETED);
-            event.putCustomAttribute("playful", playfulSurveys ? "true" : "false");
-            Answers.getInstance().logCustom(event);
+
         }
 
         @Override public void onUserNotEligible() {
             Timber.d(NOT_ELIGIBLE);
-            Answers.getInstance().logCustom(new CustomEvent(NOT_ELIGIBLE));
         }
 
         @Override public void onPollfishClosed() {
             Timber.d(CLOSED);
-            Answers.getInstance().logCustom(new CustomEvent(CLOSED));
         }
 
         @Override public void onPollfishOpened() {
             Timber.d(OPENED);
-            Answers.getInstance().logCustom(new CustomEvent(OPENED));
         }
     }
 }
