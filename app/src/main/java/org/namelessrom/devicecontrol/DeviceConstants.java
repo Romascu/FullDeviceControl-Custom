@@ -68,7 +68,7 @@ public class DeviceConstants {
     // URLs
     //==============================================================================================
     public static final String URL_DC_LICENSE = "https://github.com/Romascu/FullDeviceControl-Custom/blob/master/README.md";
-    public static final String URL_DC_PRIVACY = "https://github.com/Romascu/FullDeviceControl-Custom/privacy-policy.md";
+    public static final String URL_DC_PRIVACY = "https://github.com/Romascu/FullDeviceControl-Custom/blob/master/privacy-policy.md";
 
     //==============================================================================================
     // Directories
