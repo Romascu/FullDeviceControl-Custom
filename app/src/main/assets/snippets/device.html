@@ -1,0 +1,176 @@
+<div class="device">
+    <h1>{{'DEVICE_INFORMATION' | translate}}</h1>
+
+    <div class="devicecontainer" ng-controller="DeviceController as deviceCtrl">
+        <div class="col-md-12 col-lg-12">
+            <table class="table table-device-information">
+                <tbody ng-show="deviceCtrl.device !== null">
+                <tr>
+                    <td><h3>{{'DEVICE' | translate}}</h3></td>
+                </tr>
+                <tr>
+                    <td><b>{{'ANDROID_ID' | translate}}:</b></td>
+                    <td>{{deviceCtrl.device.android_id}}</td>
+                </tr>
+                <tr>
+                    <td><b>{{'MANUFACTURER' | translate}}:</b></td>
+                    <td>{{deviceCtrl.device.manufacturer}}</td>
+                </tr>
+                <tr>
+                    <td><b>{{'MODEL' | translate}}:</b></td>
+                    <td>{{deviceCtrl.device.model}}</td>
+                </tr>
+                <tr>
+                    <td><b>{{'PRODUCT' | translate}}:</b></td>
+                    <td>{{deviceCtrl.device.product}}</td>
+                </tr>
+                <tr>
+                    <td><b>{{'BOARD' | translate}}:</b></td>
+                    <td>{{deviceCtrl.device.board}}</td>
+                </tr>
+                <tr>
+                    <td><b>{{'BOOTLOADER' | translate}}:</b></td>
+                    <td>{{deviceCtrl.device.bootloader}}</td>
+                </tr>
+                <tr>
+                    <td><b>{{'RADIO_VERSION' | translate}}:</b></td>
+                    <td>{{deviceCtrl.device.radio_version}}</td>
+                </tr>
+
+                <tr>
+                    <td><h3>{{'PLATFORM' | translate}}</h3></td>
+                </tr>
+                <tr>
+                    <td><b>{{'PLATFORM_VERSION' | translate}}:</b></td>
+                    <td>{{deviceCtrl.device.platform_version}}</td>
+                </tr>
+                <tr>
+                    <td><b>{{'BUILD_ID' | translate}}:</b></td>
+                    <td>{{deviceCtrl.device.platform_id}}</td>
+                </tr>
+                <tr>
+                    <td><b>{{'BUILD_TYPE' | translate}}:</b></td>
+                    <td>{{deviceCtrl.device.platform_type}}</td>
+                </tr>
+                <tr>
+                    <td><b>{{'BUILD_TAGS' | translate}}:</b></td>
+                    <td>{{deviceCtrl.device.platform_tags}}</td>
+                </tr>
+                <tr>
+                    <td><b>{{'BUILD_DATE' | translate}}:</b></td>
+                    <td>{{deviceCtrl.device.platform_build_date}}</td>
+                </tr>
+
+                <tr>
+                    <td><h3>{{'RUNTIME' | translate}}</h3></td>
+                </tr>
+                <tr>
+                    <td><b>{{'RUNTIME_LIBRARY' | translate}}:</b></td>
+                    <td>{{deviceCtrl.device.vm_library}}</td>
+                </tr>
+                <tr>
+                    <td><b>{{'RUNTIME_VERSION' | translate}}:</b></td>
+                    <td>{{deviceCtrl.device.vm_version}}</td>
+                </tr>
+
+                <tr>
+                    <td><h3>{{'HARDWARE' | translate}}</h3></td>
+                </tr>
+                <tr>
+                    <td><b>{{'SCREEN_DIMENSIONS' | translate}}:</b></td>
+                    <td>{{deviceCtrl.device.screen_width}}x{{deviceCtrl.device.screen_height}}</td>
+                </tr>
+
+                <tr>
+                    <td><h3>{{'MEMORY' | translate}}</h3></td>
+                </tr>
+                <tr>
+                    <td><b>{{'TOTAL' | translate}}:</b></td>
+                    <td>{{deviceCtrl.device.memoryinfo.memoryTotal}} MB</td>
+                </tr>
+                <tr>
+                    <td><b>{{'CACHED' | translate}}:</b></td>
+                    <td>{{deviceCtrl.device.memoryinfo.memoryCached}} MB</td>
+                </tr>
+                <tr>
+                    <td><b>{{'FREE' | translate}}:</b></td>
+                    <td>{{deviceCtrl.device.memoryinfo.memoryFree}} MB</td>
+                </tr>
+
+                <tr>
+                    <td><h3>{{'PROCESSOR' | translate}}</h3></td>
+                </tr>
+                <tr>
+                    <td><b>{{'64_BIT' | translate}}:</b></td>
+                    <td>{{deviceCtrl.device.is_64_bit}}</td>
+                </tr>
+                <tr>
+                    <td><b>{{'SUPPORTED_ABIS' | translate}}:</b></td>
+                    <td>{{deviceCtrl.device.supported_abis}}</td>
+                </tr>
+                <tr>
+                    <td><b>{{'TYPE' | translate}}:</b></td>
+                    <td>{{deviceCtrl.device.cpuinfo.processor}}</td>
+                </tr>
+                <tr>
+                    <td><b>{{'HARDWARE' | translate}}:</b></td>
+                    <td>{{deviceCtrl.device.cpuinfo.hardware}}</td>
+                </tr>
+                <tr>
+                    <td><b>{{'FEATURES' | translate}}:</b></td>
+                    <td>{{deviceCtrl.device.cpuinfo.features}}</td>
+                </tr>
+                <tr>
+                    <td><b>{{'BOGOMIPS' | translate}}:</b></td>
+                    <td>{{deviceCtrl.device.cpuinfo.bogomips}}</td>
+                </tr>
+
+                <tr>
+                    <td><h3>{{'KERNEL' | translate}}</h3></td>
+                </tr>
+                <tr>
+                    <td><b>{{'VERSION' | translate}}:</b></td>
+                    <td>{{deviceCtrl.device.kernelinfo.version}}&nbsp;{{deviceCtrl.kernelinfo.revision}}</td>
+                </tr>
+                <tr>
+                    <td><b>{{'EXTRAS' | translate}}:</b></td>
+                    <td>{{deviceCtrl.device.kernelinfo.extras}}</td>
+                </tr>
+                <tr>
+                    <td><b>{{'TOOLCHAIN' | translate}}:</b></td>
+                    <td>{{deviceCtrl.device.kernelinfo.toolchain}}</td>
+                </tr>
+                <tr>
+                    <td><b>{{'BUILD_DATE' | translate}}:</b></td>
+                    <td>{{deviceCtrl.device.kernelinfo.date}}</td>
+                </tr>
+                <tr>
+                    <td><b>{{'HOST' | translate}}:</b></td>
+                    <td>{{deviceCtrl.device.kernelinfo.host}}</td>
+                </tr>
+
+                <tr>
+                    <td><h3>{{'EXTRAS' | translate}}</h3></td>
+                </tr>
+                <tr>
+                    <td><b>{{'IS_ROOTED' | translate}}:</b></td>
+                    <td>{{deviceCtrl.device.has_root}}</td>
+                </tr>
+                <tr>
+                    <td><b>{{'SU_VERSION' | translate}}:</b></td>
+                    <td>{{deviceCtrl.device.su_version}}</td>
+                </tr>
+                <tr>
+                    <td><b>{{'HAS_BUSYBOX' | translate}}:</b></td>
+                    <td>{{deviceCtrl.device.has_busybox}}</td>
+                </tr>
+                </tbody>
+                <tbody ng-show="deviceCtrl.device === null">
+                <tr>
+                    <td><b>{{'NO_INFORMATION_AVAILABLE' | translate}}</b></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

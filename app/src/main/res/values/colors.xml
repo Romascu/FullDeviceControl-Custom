@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  Copyright (C) 2013 - 2014 Alexander "Evisceration" Martinz
+
+ This program is free software: you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation, either version 3 of the License, or
+ (at your option) any later version.
+
+ This program is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
+
+ You should have received a copy of the GNU General Public License
+ along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<resources>
+    <color name="colorAccent">#009688</color>
+    <color name="colorPrimary">#fff5f5f5</color>
+    <color name="colorPrimaryDark">@color/palette_teal_700</color>
+    <color name="themeColor">#fff5f5f5</color>
+    <color name="themeColorInvert">#ff374046</color>
+    <color name="themeMenu">#ffe7e7e7</color>
+    <color name="themeMenuFooter">#fff8f8f8</color>
+
+    <color name="cardview_background">@color/cardview_light_background</color>
+
+    <color name="graph_background">@color/light_background</color>
+    <color name="graph_text_color">#000</color>
+
+    <color name="drawer_icon">#FF00796B</color>
+    <color name="drawer_icon_checked">@android:color/white</color>
+    <color name="drawer_icon_disabled">#8000796B</color>
+    <color name="drawer_text">@android:color/black</color>
+    <color name="drawer_text_checked">@android:color/white</color>
+    <color name="drawer_text_disabled">#80000000</color>
+
+    <!-- Accents -->
+    <color name="accent">#D32F2F</color>
+    <color name="dark_background">#ff374046</color>
+    <color name="dark_menu">#ff2e353a</color>
+    <color name="darker_menu">#ff21272b</color>
+    <color name="dark_primary_dark">#B71C1C</color>
+    <!-- Accents light -->
+    <color name="accent_light">#009688</color>
+    <color name="light_background">#fff5f5f5</color>
+    <color name="light_menu">#ffe7e7e7</color>
+    <color name="lighter_menu">#fff8f8f8</color>
+    <color name="light_primary_dark">@color/palette_teal_700</color>
+    <!-- palette -->
+    <color name="grass">#ff2ab081</color>
+    <color name="green">#ff53a93f</color>
+    <color name="palette_blue_600">#ff1e88e5</color>
+    <color name="palette_blue_800">#ff1565c0</color>
+    <color name="pallete_blue_grey_500">#ff607D8B</color>
+    <color name="pallete_blue_grey_700">#ff455A64</color>
+    <color name="pallete_blue_500">#2196F3</color>
+    <color name="pallete_blue_700">#1976D2</color>
+    <color name="palette_orange">#fff5a816</color>
+    <color name="palette_teal_500">#ff009688</color>
+    <color name="palette_teal_700">#ff00796B</color>
+    <color name="palette_teal_900">#ff004D40</color>
+    <color name="palette_yellow">#ffafb42b</color>
+    <color name="material_blue_500">#5677fc</color>
+    <color name="material_blue_600">#4e6cef</color>
+    <!-- Misc -->
+    <color name="red_bright">#ff5252</color>
+    <color name="red_middle">#dc3d24</color>
+    <color name="darker_gray">#66666666</color>
+    <color name="blueish">#63AA9C</color>
+    <color name="blueish_strong">#4EB1BA</color>
+    <color name="greenish">#50d07d</color>
+    <color name="grey">#AA242424</color>
+    <color name="orange">#FFFFBB33</color>
+    <!-- Wizard -->
+    <color name="step_pager_previous_tab_color">#44ffffff</color>
+    <color name="step_pager_previous_tab_color_light">#44000000</color>
+    <color name="step_pager_selected_tab_color">#ffffffff</color>
+    <color name="step_pager_selected_tab_color_light">#ff000000</color>
+    <color name="step_pager_selected_last_tab_color">#ff669900</color>
+    <color name="step_pager_selected_last_tab_color_light">#ff669900</color>
+    <color name="step_pager_next_tab_color">#10ffffff</color>
+    <color name="step_pager_next_tab_color_light">#10000000</color>
+    <color name="review_green">#ff669900</color>
+    <!-- Wizard #2 -->
+    <color name="transparent">#00000000</color>
+    <color name="black">#000000</color>
+    <color name="dark_gray">#ff1c1c1c</color>
+    <color name="white">#fafafa</color>
+    <color name="light_gray">#ffdbdbdb</color>
+    <color name="shadow_gray">#888c8c8c</color>
+    <color name="holo_blue_light">#ff33b5e5</color>
+    <color name="holo_blue_dark">#ff0099cc</color>
+    <color name="holo_blue_bright">#ff00ddff</color>
+    <color name="holo_green_light">#ff99cc00</color>
+    <color name="holo_green_dark">#ff669900</color>
+    <color name="holo_red_light">#ffff4444</color>
+    <color name="holo_red_dark">#ffcc0000</color>
+    <!-- etc -->
+    <color name="perms_costs_money">#fff4511e</color>
+    <color name="background_tab_pressed">#1AFFFFFF</color>
+
+    <color name="tab_color_normal">#b3ffffff</color>
+    <color name="tab_color_selected">#ffffff</color>
+
+    <color name="text_shadow">#000</color>
+</resources>

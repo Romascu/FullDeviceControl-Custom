@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  Copyright (C) 2013 - 2014 Alexander "Evisceration" Martinz
+
+ This program is free software: you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation, either version 3 of the License, or
+ (at your option) any later version.
+
+ This program is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
+
+ You should have received a copy of the GNU General Public License
+ along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<resources>
+    <!-- Black list -->
+    <string-array name="file_black_list" translatable="false">
+        <item>dev</item>
+        <item>power</item>
+        <item>subsystem</item>
+        <item>uevent</item>
+    </string-array>
+    <!-- Cpuquiet -->
+    <string name="file_cpu_quiet_base" translatable="false"> /sys/devices/system/cpu/cpuquiet/</string>
+    <string name="file_cpu_quiet_avail_gov" translatable="false">/sys/devices/system/cpu/cpuquiet/available_governors</string>
+    <string name="file_cpu_quiet_cur_gov" translatable="false">/sys/devices/system/cpu/cpuquiet/current_governor</string>
+    <!-- Intelli-Plug -->
+    <string-array name="directories_intelli_plug" translatable="false">
+        <item>/sys/module/intelli_plug/parameters/</item>
+        <item>/sys/kernel/intelli_plug/</item>
+    </string-array>
+    <!-- Intelli-Thermal -->
+    <string name="file_intelli_thermal_base" translatable="false">/sys/module/msm_intelli_thermal/</string>
+    <string name="file_intelli_thermal" translatable="false">/sys/module/msm_intelli_thermal/parameters/enabled</string>
+    <string name="file_intelli_thermal_cc" translatable="false">/sys/module/msm_intelli_thermal/core_control/enabled</string>
+    <!-- Mako Hotplug -->
+    <string name="directory_mako_hotplug" translatable="false">/sys/devices/virtual/misc/mako_hotplug_control/</string>
+    <!-- MSM Thermal -->
+    <string name="directory_msm_thermal" translatable="false">/sys/module/msm_thermal/parameters/</string>
+    <string name="file_msm_thermal_cc" translatable="false">/sys/module/msm_thermal/core_control/enabled</string>
+    <string name="file_msm_thermal_cc_offlined" translatable="false">/sys/module/msm_thermal/core_control/cpus_offlined</string>
+    <!-- KSM -->
+    <string name="file_ksm_deferred" translatable="false">/sys/kernel/mm/ksm/deferred_timer</string>
+    <string name="file_ksm_run" translatable="false">/sys/kernel/mm/ksm/run</string>
+    <!-- UKSM -->
+    <string name="file_uksm_run" translatable="false">/sys/kernel/mm/uksm/run</string>
+    <!-- Sound control -->
+    <!-- francisco franco -->
+    <string name="file_sc_ff_microphone_gain">/sys/devices/virtual/misc/soundcontrol/mic_boost</string>
+    <string name="file_sc_ff_speaker_gain">/sys/devices/virtual/misc/soundcontrol/speaker_boost</string>
+    <string name="file_sc_ff_volume_gain">/sys/devices/virtual/misc/soundcontrol/volume_boost</string>
+    <!-- Random -->
+    <string name="file_entropy_read_wakeup_threshold">/proc/sys/kernel/random/read_wakeup_threshold</string>
+    <string name="file_entropy_write_wakeup_threshold">/proc/sys/kernel/random/write_wakeup_threshold</string>
+    <!-- Misc -->
+    <string name="file_thermal_cpu" translatable="false">/sys/class/thermal/thermal_zone0/temp</string>
+    <string name="file_fc_failsafe" translatable="false">/sys/kernel/fast_charge/failsafe</string>
+    <string name="file_keyboard_light" translatable="false">/sys/class/leds/keyboard-backlight/max_brightness</string>
+    <string name="file_logger_mode" translatable="false">/sys/kernel/logger_mode/logger_mode</string>
+    <string name="file_msm_dcvs" translatable="false">/sys/module/msm_dcvs/parameters/enable</string>
+    <string name="file_power_efficient_workqueue" translatable="false">/sys/module/workqueue/parameters/power_efficient</string>
+    <string name="file_touchkey_bln" translatable="false">/sys/class/misc/backlightnotification/enabled</string>
+    <string name="file_touchkey_light" translatable="false">/sys/class/leds/button-backlight/max_brightness</string>
+    <string name="file_dyn_fsync" translatable="false">/sys/kernel/dyn_fsync/Dyn_fsync_active</string>
+    <string name="file_fsync" translatable="false">/sys/module/sync/parameters/fsync_enabled</string>
+    <string name="file_mc_power_sched" translatable="false">/sys/devices/system/cpu/sched_mc_power_savings</string>
+    <string name="file_mmc_software_crc" translatable="false">/sys/module/mmc_core/parameters/use_spi_crc</string>
+
+    <!-- ARRAYS -->
+    <string-array name="files_touchkey_light" translatable="false">
+        <item>/sys/class/leds/button-backlight/max_brightness</item>
+        <item>/sys/class/leds/button-backlight/brightness</item>
+    </string-array>
+    <string-array name="files_core_control" translatable="false">
+        <item>@string/file_intelli_thermal_cc</item>
+        <item>@string/file_msm_thermal_cc</item>
+    </string-array>
+    <string-array name="files_knock_on" translatable="false">
+        <item>/proc/touchpanel/double_tap_enable</item>
+        <item>/sys/devices/virtual/input/lge_touch/touch_gesture</item>
+        <item>/sys/devices/virtual/input/lge_touch/lpwg_notify</item>
+        <item>/sys/devices/virtual/input/clearpad/wakeup_gesture</item>
+        <item>/sys/devices/virtual/htc_sensorhub/sensor_hub/tap2wake</item>
+        <item>/sys/devices/i2c-3/3-004b/knock_on</item>
+        <item>/sys/devices/f9927000.i2c/i2c-5/5-005d/wakeup_gesture</item>
+        <item>/sys/bus/i2c/devices/1-004a/tsp</item>
+        <item>/sys/devices/virtual/input/lge_touch/dt_wake_enabled</item>
+        <item>/sys/android_touch/doubletap2wake</item>
+        <item>/sys/kernel/touchscreen/double_tap_enable</item>
+    </string-array>
+    <string-array name="files_knock_on_values" translatable="false">
+        <item>"1;0"</item>
+        <item>"1;0"</item>
+        <item>"1;0"</item>
+        <item>"1;0"</item>
+        <item>"1;0"</item>
+        <item>"1;0"</item>
+        <item>"1;0"</item>
+        <item>"auto;off"</item>
+        <item>"1;0</item>
+        <item>"1;0</item>
+    </string-array>
+    <string-array name="files_sweep_to_wake" translatable="false">
+        <item>/sys/android_touch/sweep2wake</item>
+        <item>/proc/touchpanel/sweep_wake_enable</item>
+    </string-array>
+    <string-array name="files_sweep_to_volume" translatable="false">
+        <item>/proc/touchpanel/sweep_vol_enable</item>
+    </string-array>
+    <string-array name="files_lcd_power_reduce" translatable="false">
+        <item>/sys/class/lcd/panel/power_reduce</item>
+        <item>/sys/class/graphics/fb0/cabc</item>
+        <item>/sys/devices/tegradc.0/smartdimmer/enable</item>
+        <item>/sys/class/backlight/s6e8aa0/acl_set</item>
+        <item>/sys/class/graphics/fb0/device/smartdimmer/enable</item>
+    </string-array>
+    <string-array name="files_lcd_sunlight_enhancement" translatable="false">
+        <item>/sys/class/graphics/fb0/sre</item>
+        <item>/sys/class/graphics/fb0/hbm</item>
+    </string-array>
+    <string-array name="files_lcd_color_enhancement" translatable="false">
+        <item>/sys/class/graphics/fb0/color_enhance</item>
+    </string-array>
+    <string-array name="files_glove_mode" translatable="false">
+        <item>/proc/touchpanel/glove_mode_enable</item>
+        <item>/sys/devices/virtual/input/clearpad/glove</item>
+        <item>/sys/devices/virtual/input/max1187x/glove</item>
+    </string-array>
+    <string-array name="files_panel_color_temp" translatable="false">
+        <item>/sys/class/lcd/panel/panel_colors</item>
+        <item>/sys/class/sec/tsp/panel_colors</item>
+    </string-array>
+    <string-array name="files_reset_on_suspend" translatable="false">
+        <item>/sys/class/input/input0/reset_on_suspend</item>
+    </string-array>
+
+    <!-- Vibrator -->
+    <string-array name="hardware_vibrator_paths" translatable="false">
+        <item>/sys/class/timed_output/vibrator/pwm_value</item>
+        <item>/sys/devices/platform/tspdrv/nforce_timed</item>
+        <item>/sys/vibrator/pwm_val</item>
+        <item>/sys/vibrator/pwmvalue</item>
+        <item>/sys/class/timed_output/vibrator/vtg_level</item>
+        <item>/sys/class/timed_output/vibrator/level</item>
+        <item>/sys/class/timed_output/vibrator/amp</item>
+        <item>/sys/class/timed_output/vibrator/dutycycle</item>
+        <item>/sys/class/misc/pwm_duty/pwm_duty</item>
+        <item>/sys/class/timed_output/vibrator/voltage_level</item>
+        <item>/sys/devices/virtual/timed_output/vibrator/voltage_level</item>
+        <item>/sys/devices/i2c-12/12-0049/intensity</item>
+        <item>/sys/devices/i2c-2/2-0049/intensity</item>
+    </string-array>
+    <string-array name="hardware_vibrator_maximum_path" translatable="false">
+        <item>-</item>
+        <item>-</item>
+        <item>-</item>
+        <item>-</item>
+        <item>/sys/class/timed_output/vibrator/vtg_max</item>
+        <item>-</item>
+        <item>-</item>
+        <item>-</item>
+        <item>-</item>
+        <item>-</item>
+        <item>-</item>
+        <item>-</item>
+        <item>-</item>
+    </string-array>
+    <string-array name="hardware_vibrator_maximum" translatable="false">
+        <item>100</item>
+        <item>127</item>
+        <item>100</item>
+        <item>100</item>
+        <item>31</item>
+        <item>30</item>
+        <item>100</item>
+        <item>50000</item>
+        <item>100</item>
+        <item>3100</item>
+        <item>3199</item>
+        <item>8</item>
+        <item>8</item>
+    </string-array>
+    <string-array name="hardware_vibrator_minimum_path" translatable="false">
+        <item>-</item>
+        <item>-</item>
+        <item>-</item>
+        <item>-</item>
+        <item>/sys/class/timed_output/vibrator/vtg_min</item>
+        <item>-</item>
+        <item>-</item>
+        <item>-</item>
+        <item>-</item>
+        <item>-</item>
+        <item>-</item>
+        <item>-</item>
+        <item>-</item>
+    </string-array>
+    <string-array name="hardware_vibrator_minimum" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>0</item>
+        <item>0</item>
+        <item>12</item>
+        <item>5</item>
+        <item>50</item>
+        <item>25000</item>
+        <item>0</item>
+        <item>1200</item>
+        <item>1200</item>
+        <item>0</item>
+        <item>0</item>
+    </string-array>
+    <string-array name="hardware_vibrator_default" translatable="false">
+        <item>50</item>
+        <item>65</item>
+        <item>50</item>
+        <item>50</item>
+        <item>max</item>
+        <item>22</item>
+        <item>70</item>
+        <item>38000</item>
+        <item>100</item>
+        <item>1700</item>
+        <item>2700</item>
+        <item>5</item>
+        <item>5</item>
+    </string-array>
+    <string-array name="hardware_vibrator_threshold" translatable="false">
+        <item>76</item>
+        <item>90</item>
+        <item>76</item>
+        <item>76</item>
+        <item>-1</item>
+        <item>25</item>
+        <item>-1</item>
+        <item>44000</item>
+        <item>-1</item>
+        <item>2700</item>
+        <item>3000</item>
+        <item>6</item>
+        <item>6</item>
+    </string-array>
+</resources>

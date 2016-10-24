@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  Copyright (C) 2013 - 2014 Alexander "Evisceration" Martinz
+
+ This program is free software: you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation, either version 3 of the License, or
+ (at your option) any later version.
+
+ This program is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
+
+ You should have received a copy of the GNU General Public License
+ along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:dc="http://schemas.android.com/apk/res-auto">
+
+    <org.namelessrom.devicecontrol.preferences.CustomPreference
+        android:key="version"
+        android:title="@string/version" />
+
+    <org.namelessrom.devicecontrol.preferences.CustomListPreference
+        android:key="force_fast_charge"
+        android:title="@string/force_fast_charge" />
+
+    <org.namelessrom.devicecontrol.preferences.AwesomeTogglePreference
+        android:key="failsafe"
+        android:title="@string/failsafe"
+        dc:filePath="@string/file_fc_failsafe"
+        dc:category="features" />
+
+    <org.namelessrom.devicecontrol.preferences.CustomPreference
+        android:key="ac_levels_valid"
+        android:title="@string/ac_levels_valid" />
+
+    <org.namelessrom.devicecontrol.preferences.CustomEditTextPreference
+        android:key="ac_level"
+        android:title="@string/ac_level"
+        android:inputType="number" />
+
+    <org.namelessrom.devicecontrol.preferences.CustomPreference
+        android:key="usb_levels_valid"
+        android:title="@string/usb_levels_valid" />
+
+    <org.namelessrom.devicecontrol.preferences.CustomEditTextPreference
+        android:key="usb_level"
+        android:title="@string/usb_level"
+        android:inputType="number" />
+
+</PreferenceScreen>

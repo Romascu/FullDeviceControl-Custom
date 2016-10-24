@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  Copyright (C) 2013 - 2014 Alexander "Evisceration" Martinz
+
+ This program is free software: you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation, either version 3 of the License, or
+ (at your option) any later version.
+
+ This program is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
+
+ You should have received a copy of the GNU General Public License
+ along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:dc="http://schemas.android.com/apk/res-auto">
+
+    <org.namelessrom.devicecontrol.preferences.CustomListPreference
+        android:key="io"
+        android:title="@string/io" />
+
+    <org.namelessrom.devicecontrol.preferences.CustomPreference
+        android:key="io_configure"
+        android:title="@string/configure_format" />
+
+    <org.namelessrom.devicecontrol.preferences.CustomListPreference
+        android:entries="@array/read_ahead_entries"
+        android:entryValues="@array/read_ahead_values"
+        android:key="read_ahead"
+        android:title="@string/read_ahead" />
+
+    <org.namelessrom.devicecontrol.preferences.AwesomeTogglePreference
+        android:key="fsync"
+        android:summary="@string/warning_data_corruption_invert"
+        android:title="@string/fsync"
+        dc:category="extras"
+        dc:filePath="@string/file_fsync" />
+
+    <org.namelessrom.devicecontrol.preferences.AwesomeTogglePreference
+        android:key="dyn_fsync"
+        android:summary="@string/warning_data_corruption"
+        android:title="@string/dyn_fsync"
+        dc:category="extras"
+        dc:filePath="@string/file_dyn_fsync" />
+
+    <org.namelessrom.devicecontrol.preferences.AwesomeTogglePreference
+        android:key="mmc_software_crc"
+        android:summary="@string/data_integrity_decreased_performance"
+        android:title="@string/mmc_software_crc"
+        dc:category="extras"
+        dc:filePath="@string/file_mmc_software_crc" />
+
+    <org.namelessrom.devicecontrol.preferences.CustomPreferenceCategory
+        android:key="fstrim_cat"
+        android:title="@string/fstrim_title">
+
+        <org.namelessrom.devicecontrol.preferences.CustomTogglePreference
+            android:key="fstrim"
+            android:title="@string/fstrim_title"
+            android:summary="@string/fstrim_summary" />
+
+        <org.namelessrom.devicecontrol.preferences.CustomListPreference
+            android:key="fstrim_interval"
+            android:dependency="fstrim"
+            android:title="@string/fstrim_interval_title"
+            android:summary="@string/fstrim_interval_summary"
+            android:entries="@array/fstrim_entries"
+            android:entryValues="@array/fstrim_values"
+            android:defaultValue="7" />
+
+    </org.namelessrom.devicecontrol.preferences.CustomPreferenceCategory>
+
+</PreferenceScreen>

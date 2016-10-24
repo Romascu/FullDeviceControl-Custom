@@ -1,0 +1,10 @@
+include ':app'
+
+include ':ExecutionLibrary'
+project(':ExecutionLibrary').projectDir = new File('modules/ExecutionLibrary/execution')
+
+include ':HardwareLibrary'
+project(':HardwareLibrary').projectDir = new File('modules/HardwareLibrary/hardware')
+
+include ':ExternalSources'
+project(':ExternalSources').projectDir = new File('modules/ExternalSources')

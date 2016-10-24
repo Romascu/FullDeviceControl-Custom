@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  Copyright (C) 2013 - 2014 Alexander "Evisceration" Martinz
+
+ This program is free software: you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation, either version 3 of the License, or
+ (at your option) any later version.
+
+ This program is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
+
+ You should have received a copy of the GNU General Public License
+ along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:dc="http://schemas.android.com/apk/res-auto">
+
+    <org.namelessrom.devicecontrol.preferences.CustomPreferenceCategory
+        android:key="ksm_info"
+        android:title="@string/information">
+
+        <org.namelessrom.devicecontrol.preferences.CustomPreference
+            android:key="ksm_full_scans"
+            android:title="@string/full_scans" />
+
+        <org.namelessrom.devicecontrol.preferences.CustomPreference
+            android:key="ksm_pages_shared"
+            android:title="@string/pages_shared" />
+
+        <org.namelessrom.devicecontrol.preferences.CustomPreference
+            android:key="ksm_pages_sharing"
+            android:title="@string/pages_sharing" />
+
+        <org.namelessrom.devicecontrol.preferences.CustomPreference
+            android:key="ksm_pages_unshared"
+            android:title="@string/pages_unshared" />
+
+        <org.namelessrom.devicecontrol.preferences.CustomPreference
+            android:key="ksm_pages_volatile"
+            android:title="@string/pages_volatile" />
+
+    </org.namelessrom.devicecontrol.preferences.CustomPreferenceCategory>
+
+    <org.namelessrom.devicecontrol.preferences.CustomPreferenceCategory
+        android:key="ksm_settings"
+        android:title="@string/ksm">
+
+        <org.namelessrom.devicecontrol.preferences.AwesomeTogglePreference
+            android:key="ksm_run"
+            android:title="@string/enable_ksm"
+            android:summary="@string/reduce_memory_increase_cpu_load"
+            dc:filePath="@string/file_ksm_run"
+            dc:category="extras" />
+
+        <org.namelessrom.devicecontrol.preferences.AwesomeTogglePreference
+            android:key="ksm_deferred"
+            android:title="@string/deferred_timer"
+            android:summary="@string/deferred_timer_summary"
+            android:dependency="ksm_run"
+            dc:filePath="@string/file_ksm_deferred"
+            dc:category="extras" />
+
+        <org.namelessrom.devicecontrol.preferences.CustomPreference
+            android:key="ksm_pages_to_scan"
+            android:title="@string/pages_to_scan"
+            android:dependency="ksm_run" />
+
+        <org.namelessrom.devicecontrol.preferences.CustomPreference
+            android:key="ksm_sleep"
+            android:title="@string/sleep_between_scans"
+            android:dependency="ksm_run" />
+
+    </org.namelessrom.devicecontrol.preferences.CustomPreferenceCategory>
+
+</PreferenceScreen>

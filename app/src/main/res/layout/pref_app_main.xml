@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  Copyright (C) 2013 - 2015 Alexander "Evisceration" Martinz
+
+ This program is free software: you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation, either version 3 of the License, or
+ (at your option) any later version.
+
+ This program is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
+
+ You should have received a copy of the GNU General Public License
+ along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- Interface -->
+    <org.namelessrom.devicecontrol.preferences.CustomPreferenceCategoryMaterial
+        android:id="@+id/cat_prefs_interface"
+        style="@style/MaterialPreferences.Default"
+        app:prefTitle="@string/user_interface">
+
+        <alexander.martinz.libs.materialpreferences.MaterialListPreference
+            android:id="@+id/prefs_theme_mode"
+            style="@style/MaterialPreferences.Default"
+            app:prefKey="light_theme"
+            app:prefSummary="@string/theme_mode_summary"
+            app:prefEntries="@array/theme_mode"
+            app:prefEntryValues="@array/theme_mode_values"
+            app:prefTitle="@string/theme_mode" />
+
+        <alexander.martinz.libs.materialpreferences.MaterialSwitchPreference
+            android:id="@+id/prefs_low_end_gfx"
+            style="@style/MaterialPreferences.Default"
+            app:prefKey="low_end_gfx"
+            app:prefSummary="@string/low_end_gfx_summary"
+            app:prefTitle="@string/low_end_gfx" />
+
+    </org.namelessrom.devicecontrol.preferences.CustomPreferenceCategoryMaterial>
+
+    <!-- Support -->
+    <org.namelessrom.devicecontrol.preferences.CustomPreferenceCategoryMaterial
+        android:id="@+id/cat_prefs_support"
+        style="@style/MaterialPreferences.Default"
+        app:prefTitle="@string/support">
+
+        <alexander.martinz.libs.materialpreferences.MaterialSwitchPreference
+            android:id="@+id/prefs_show_pollfish"
+            style="@style/MaterialPreferences.Default"
+            app:prefKey="show_pollfish"
+            app:prefSummary="@string/show_pollfish_summary"
+            app:prefTitle="@string/show_pollfish" />
+
+        <alexander.martinz.libs.materialpreferences.MaterialSwitchPreference
+            android:id="@+id/prefs_use_sense360"
+            style="@style/MaterialPreferences.Default"
+            app:prefKey="use_sense360"
+            app:prefSummary="@string/use_sense360_summary"
+            app:prefTitle="@string/use_sense360" />
+
+    </org.namelessrom.devicecontrol.preferences.CustomPreferenceCategoryMaterial>
+
+    <!-- Expert -->
+    <org.namelessrom.devicecontrol.preferences.CustomPreferenceCategoryMaterial
+        android:id="@+id/cat_prefs_expert"
+        style="@style/MaterialPreferences.Default"
+        app:prefTitle="@string/expert_mode">
+
+        <!-- Enable expert mode -->
+        <alexander.martinz.libs.materialpreferences.MaterialSwitchPreference
+            android:id="@+id/prefs_expert_enable"
+            style="@style/MaterialPreferences.Default"
+            app:prefSummary="@string/expert_mode_summary"
+            app:prefTitle="@string/expert_mode_title" />
+
+        <!-- Skip checks -->
+        <alexander.martinz.libs.materialpreferences.MaterialSwitchPreference
+            android:id="@+id/prefs_expert_skip_checks"
+            style="@style/MaterialPreferences.Default"
+            app:prefSummary="@string/skip_checks_summary"
+            app:prefTitle="@string/skip_checks" />
+
+        <!-- Shell context -->
+        <alexander.martinz.libs.materialpreferences.MaterialListPreference
+            android:id="@+id/prefs_expert_su_shell_context"
+            style="@style/MaterialPreferences.Default"
+            app:prefEntries="@array/su_shell_context_entries"
+            app:prefEntryValues="@array/su_shell_context_values"
+            app:prefPlaceOnBottom="true"
+            app:prefTitle="@string/su_shell_context" />
+    </org.namelessrom.devicecontrol.preferences.CustomPreferenceCategoryMaterial>
+
+</LinearLayout>
+

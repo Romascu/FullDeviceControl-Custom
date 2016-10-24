@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  Copyright (C) 2013 - 2014 Alexander "Evisceration" Martinz
+
+ This program is free software: you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation, either version 3 of the License, or
+ (at your option) any later version.
+
+ This program is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
+
+ You should have received a copy of the GNU General Public License
+ along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<resources>
+    <!-- Wizard -->
+    <style name="SetupWizardPageTitle">
+        <item name="android:id">@android:id/title</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/title_top_margin</item>
+        <item name="android:layout_marginBottom">8dp</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:textStyle">italic|bold</item>
+        <item name="android:textColor">?colorAccent</item>
+    </style>
+
+    <style name="AppManagerBottomSheetStyle" parent="@style/BottomSheet">
+        <!-- Tints the menu item icon to the specified color -->
+        <item name="bottom_sheet_item_icon_color">?colorAccent</item>
+    </style>
+
+    <style name="MaterialPreferences.Default">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="prefIconTint">?colorAccent</item>
+    </style>
+
+</resources>

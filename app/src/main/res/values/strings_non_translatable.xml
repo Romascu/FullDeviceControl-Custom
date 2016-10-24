@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (C) 2013 - 2016 Alexander Martinz
+  ~
+  ~ This program is free software: you can redistribute it and/or modify
+  ~ it under the terms of the GNU General Public License as published by
+  ~ the Free Software Foundation, either version 3 of the License, or
+  ~ (at your option) any later version.
+  ~
+  ~ This program is distributed in the hope that it will be useful,
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~ GNU General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU General Public License
+  ~ along with this program.  If not, see <http://www.gnu.org/licenses/>.
+  -->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="drawer_title_home" translatable="false">@string/home</string>
+    <!-- info -->
+    <string name="drawer_title_info" translatable="false">@string/information</string>
+    <string name="drawer_title_info_device" translatable="false">@string/device</string>
+    <string name="drawer_title_info_hardware" translatable="false">@string/hardware</string>
+    <string name="drawer_title_info_software" translatable="false">@string/software</string>
+    <string name="drawer_title_info_performance" translatable="false">@string/performance</string>
+    <!-- controls -->
+    <string name="drawer_title_controls">Controls</string>
+    <string name="drawer_title_controls_device" translatable="false">@string/device</string>
+    <string name="drawer_title_controls_processor" translatable="false">@string/processor</string>
+    <string name="drawer_title_controls_graphics" translatable="false">@string/graphics</string>
+    <string name="drawer_title_controls_file_system" translatable="false">@string/file_system</string>
+    <string name="drawer_title_controls_thermal" translatable="false">@string/thermal</string>
+    <!-- tools -->
+    <string name="drawer_title_tools" translatable="false">@string/tools</string>
+    <string name="drawer_title_tools_bootup_restoration" translatable="false">@string/bootup_restoration</string>
+    <string name="drawer_title_tools_app_manager" translatable="false">@string/app_manager</string>
+    <string name="drawer_title_tools_tasker" translatable="false">@string/tasker</string>
+    <string name="drawer_title_tools_flasher" translatable="false">@string/flasher</string>
+    <string name="drawer_title_tools_more" translatable="false">@string/more</string>
+    <!-- app info -->
+    <string name="drawer_title_app_info">App information</string>
+    <string name="drawer_title_app_info_license" translatable="false">@string/licenses</string>
+    <string name="drawer_title_app_info_privacy" translatable="false">@string/privacy</string>
+
+    <!-- Fonts -->
+    <string name="font_bold" translatable="false">sans-serif-bold</string>
+    <string name="font_condensed" translatable="false">sans-serif-condensed</string>
+    <string name="font_light" translatable="false">sans-serif-light</string>
+    <string name="font_normal" translatable="false">sans-serif</string>
+    <string name="font_thin" translatable="false">sans-serif-thin</string>
+    <!-- Strings -->
+    <string name="app_name" translatable="false">Full Device Control</string>
+    <string name="buildprop" translatable="false">Build.Prop</string>
+    <string name="cpu" translatable="false">CPU</string>
+    <string name="cpu_quiet" translatable="false">CPUquiet</string>
+    <string name="emmc" translatable="false">eMMC</string>
+    <string name="emmc_cid" translatable="false">CID</string>
+    <string name="emmc_mid" translatable="false">MID</string>
+    <string name="msm_dcvs" translatable="false">MSM DCVS</string>
+    <string name="empty" translatable="false" />
+    <string name="intelli_plug" translatable="false">Intelli-Plug</string>
+    <string name="intelli_thermal" translatable="false">Intelli-Thermal</string>
+    <string name="ksm" translatable="false">Kernel Samepage Merging</string>
+    <string name="uksm" translatable="false">Ultra Kernel Samepage Merging</string>
+    <string name="mako_hotplug" translatable="false">Mako Hotplug</string>
+    <string name="msm_thermal" translatable="false">MSM-Thermal</string>
+    <string name="menu_plus" translatable="false">+25mV</string>
+    <string name="menu_minus" translatable="false">-25mV</string>
+    <string name="unknown" translatable="false">---</string>
+    <string name="mpdecision" translatable="false">MPDecision</string>
+    <string name="su" translatable="false">SU</string>
+    <string name="submit_confirm_button" translatable="false">@string/finish</string>
+    <string name="lcd_density_default" translatable="false">480</string>
+    <string name="sysctl_vm" translatable="false">SysCtl / VM</string>
+    <string name="openrecovery_twrp" translatable="false">OpenRecovery / TWRP</string>
+    <string name="cyanogen_clockworkmod" translatable="false">Cyanogen / ClockWorkMod</string>
+    <string name="fsync" translatable="false">FSync</string>
+    <string name="dyn_fsync" translatable="false">Dynamic FSync</string>
+    <string name="cpu_abi" translatable="false">CPU ABI</string>
+    <string name="bogomips" translatable="false">BogoMIPS</string>
+    <string name="entropy_read_wakeup_threshold" translatable="false">read_wakeup_threshold</string>
+    <string name="entropy_write_wakeup_threshold" translatable="false">write_wakeup_threshold</string>
+    <string name="mmc_software_crc" translatable="false">Software CRC</string>
+    <string name="selinux" translatable="false">SELinux</string>
+    <!-- Dalvik -->
+    <string name="dirty_ratio_title" translatable="false">Dirty ratio</string>
+    <string name="dirty_background_title" translatable="false">Dirty background ratio</string>
+    <string name="dirty_expire_title" translatable="false">Dirty expire centisecs</string>
+    <string name="dirty_writeback_title" translatable="false">Dirty writeback centisecs</string>
+    <string name="min_free_title" translatable="false">Minfree kbytes</string>
+    <string name="overcommit_title" translatable="false">Overcommit ratio</string>
+    <string name="swappiness_title" translatable="false">Swappiness</string>
+    <string name="vfs_title" translatable="false">VFS cache pressure</string>
+    <!-- Licenses -->
+    <string name="google_play_notice" translatable="false">Google Play is a trademark of Google Inc.</string>
+    <!-- Arrays -->
+    <!-- Sizes -->
+    <!-- KB -->
+    <string name="size_128_kb" translatable="false">128 kB</string>
+    <string name="size_256_kb" translatable="false">256 kB</string>
+    <string name="size_512_kb" translatable="false">512 kB</string>
+    <string name="size_1024_kb" translatable="false">1024 kB</string>
+    <string name="size_2048_kb" translatable="false">2048 kB</string>
+    <string name="size_3072_kb" translatable="false">3072 kB</string>
+    <string name="size_4096_kb" translatable="false">4096 kB</string>
+    <string name="size_8192_kb" translatable="false">8192 kB</string>
+    <!-- MB -->
+    <string name="size_25_mb" translatable="false">25 MB</string>
+    <string name="size_50_mb" translatable="false">50 MB</string>
+    <string name="size_75_mb" translatable="false">75 MB</string>
+    <string name="size_80_mb" translatable="false">80 MB</string>
+    <string name="size_100_mb" translatable="false">100 MB</string>
+    <!-- GPU / OpenGL -->
+    <string name="gpu_opengl" translatable="false">GPU / OpenGL</string>
+    <string name="gpu" translatable="false">GPU</string>
+    <string name="opengl" translatable="false">OpenGL</string>
+    <!-- Bits -->
+    <string name="bit_32" translatable="false">32-bit</string>
+    <string name="bit_64" translatable="false">64-bit</string>
+    <!-- misc -->
+    <string name="back_button_label" translatable="false">Back</string>
+    <string name="next_button_label" translatable="false">Next</string>
+    <string name="skip_button_label" translatable="false">Skip</string>
+    <string name="androidsecure" translatable="false">Android secure</string>
+    <string name="sdext" translatable="false">SD-Ext</string>
+    <string name="join_many_items_first" translatable="false"><xliff:g id="first_item">%1$s</xliff:g>, <xliff:g id="all_but_first_and_last_item">%2$s</xliff:g></string>
+    <string name="join_many_items_middle" translatable="false"><xliff:g id="added_item">%1$s</xliff:g>, <xliff:g id="rest_of_items">%2$s</xliff:g></string>
+    <!-- Donation -->
+    <string name="google_play">Google Play</string>
+    <string name="flattr">Flattr</string>
+    <string name="paypal" translatable="false">PayPal</string>
+    <!-- URLs -->
+    <string name="non_google_plus_community_url" translatable="false">https://plus.google.com/u/0/communities/102835551008778372596</string>
+    <string name="non_beta_url" translatable="false">https://play.google.com/apps/testing/org.namelessrom.devicecontrol</string>
+
+    <!-- dummy strings -->
+    <string name="dummy_header_title">OPPO R7Plusf</string>
+    <string name="dummy_header_subtitle">Android 6.0.1 / 64-bit</string>
+
+    <!-- expert preferences -->
+    <string name="su_shell_context" translatable="false">Shell context</string>
+    <string name="su_shell_context_summary" translatable="false">The context under which Device Control should run its commands.\nThe default value is <xliff:g example="Normal" id="value">\"%s\"</xliff:g>.\nCurrent value: <xliff:g example="System app" id="value">\"%s\"</xliff:g></string>
+    <string name="shell" translatable="false">Shell</string>
+
+    <string name="gps" translatable="false">GPS</string>
+
+    <!-- DRM -->
+    <string name="drm_widevine">Widevine DRM</string>
+    <string name="drm_playready">Microsoft PlayReady DRM</string>
+</resources>

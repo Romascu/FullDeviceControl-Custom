@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  Copyright (C) 2013 - 2014 Alexander "Evisceration" Martinz
+
+ This program is free software: you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation, either version 3 of the License, or
+ (at your option) any later version.
+
+ This program is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
+
+ You should have received a copy of the GNU General Public License
+ along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<resources>
+
+    <string-array name="theme_mode">
+        <item>@string/automatically</item>
+        <item>@string/day</item>
+        <item>@string/night</item>
+    </string-array>
+    <string-array name="theme_mode_values" translatable="false">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <!-- Panel Color -->
+    <string-array name="panel_color_temp_entries">
+        <item>@string/cold</item>
+        <item>@string/cool</item>
+        <item>@string/normal</item>
+        <item>@string/warm</item>
+        <item>@string/hot</item>
+    </string-array>
+    <string-array name="panel_color_temp_entries_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+
+    <!-- FSTRIM -->
+    <string-array name="fstrim_entries" translatable="false">
+        <item>@string/five_minutes</item>
+        <item>@string/ten_minutes</item>
+        <item>@string/twenty_minutes</item>
+        <item>@string/thirty_minutes</item>
+        <item>@string/one_hours</item>
+        <item>@string/two_hours</item>
+        <item>@string/four_hours</item>
+        <item>@string/eight_hours</item>
+    </string-array>
+
+    <string-array name="fstrim_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+    </string-array>
+
+    <string-array name="mc_power_savings_entries" translatable="false">
+        <item>@string/powersaving_sched_mc_0</item>
+        <item>@string/powersaving_sched_mc_1</item>
+        <item>@string/powersaving_sched_mc_2</item>
+    </string-array>
+
+    <string-array name="mc_power_savings_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+    <string-array name="read_ahead_entries" translatable="false">
+        <item>@string/size_128_kb</item>
+        <item>@string/size_256_kb</item>
+        <item>@string/size_512_kb</item>
+        <item>@string/size_1024_kb</item>
+        <item>@string/size_2048_kb</item>
+        <item>@string/size_3072_kb</item>
+        <item>@string/size_4096_kb</item>
+        <item>@string/size_8192_kb</item>
+    </string-array>
+    <string-array name="read_ahead_values" translatable="false">
+        <item>128</item>
+        <item>256</item>
+        <item>512</item>
+        <item>1024</item>
+        <item>2048</item>
+        <item>3072</item>
+        <item>4096</item>
+        <item>8192</item>
+    </string-array>
+
+    <string-array name="su_shell_context_entries" translatable="false">
+        <item>@string/normal</item>
+        <item>@string/init</item>
+        <item>@string/su</item>
+        <item>@string/shell</item>
+        <item>@string/system_server</item>
+        <item>@string/system_app</item>
+        <item>@string/platform_app</item>
+        <item>@string/untrusted_app</item>
+        <item>@string/recovery</item>
+    </string-array>
+    <string-array name="su_shell_context_values" translatable="false">
+        <item>normal</item>
+        <item>u:r:init:s0</item>
+        <item>u:r:su:s0</item>
+        <item>u:r:shell:s0</item>
+        <item>u:r:system_server:s0</item>
+        <item>u:r:system_app:s0</item>
+        <item>u:r:platform_app:s0</item>
+        <item>u:r:untrusted_app:s0</item>
+        <item>u:r:recovery:s0</item>
+    </string-array>
+
+    <string-array name="automated_restoration_delay_entries" translatable="false">
+        <item>@string/none</item>
+        <item>@string/fifteen_seconds</item>
+        <item>@string/thirty_seconds</item>
+        <item>@string/one_minute</item>
+    </string-array>
+    <string-array name="automated_restoration_delay_values" translatable="false">
+        <item>0</item>
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+    </string-array>
+
+</resources>
